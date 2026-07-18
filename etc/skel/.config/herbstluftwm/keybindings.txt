@@ -1,0 +1,108 @@
+###############################################################################
+#  KEYBINDINGS — kiro-hlwm (herbstluftwm)
+#  Source: etc/skel/.config/herbstluftwm/autostart  (herbstclient keybind …)
+#  Modifier: SUPER (Mod4). Layout-neutral: tag number-row keys auto-adapt to
+#  a Belgian (be) AZERTY layout; QWERTY is the shipped default.
+#  Keep this file in lockstep with `autostart`.
+###############################################################################
+
+── 1. Applications & Launchers ───────────────────────────────────────────────
+  super + Return          alacritty (terminal)
+  super + t               alacritty (terminal)
+  super + KP_Enter        alacritty (terminal, numpad)
+  ctrl + alt + Return     alacritty (terminal)
+  ctrl + alt + t          alacritty (terminal)
+  super + shift + Return  thunar (file manager)
+  super + space           rofi drun (app launcher)
+  super + r               rofi drun (app launcher)
+  super + d               rofi drun (app launcher)
+  super + F11             rofi drun (app launcher)
+  super + F12             rofi drun (app launcher)
+  super + e               code (editor)
+  super + v               pavucontrol (audio mixer)
+  super + F1              vivaldi-stable (browser)
+  super + F2              code (editor)
+  super + F3              inkscape
+  super + F4              gimp
+  super + F5              meld
+  super + F6              vlc
+  super + F7              virtualbox
+  super + F8              thunar (file manager)
+  super + F9              virt-manager
+  super + F10             spotify
+  ctrl + alt + f          firefox (browser)
+  ctrl + alt + b          brave (browser)
+  ctrl + alt + e          archlinux-tweak-tool
+  ctrl + alt + p          pamac-manager
+
+── 2. Window Management ───────────────────────────────────────────────────────
+  super + q               close focused window
+  super + shift + q       close focused window
+  super + shift + c       close focused window
+  super + f               toggle fullscreen
+  super + shift + f       toggle floating (focused window)
+  super + s               toggle floating mode (whole tag)
+  super + y               toggle pseudotile
+  super + c               cycle windows within the frame
+  super + i               jump to urgent window
+  super + shift + Escape  xkill (force-kill a window)
+  super + Mouse1 (drag)   move window
+  super + Mouse2          zoom (swap with the largest frame)
+  super + Mouse3 (drag)   resize window
+
+── 3. Workspaces / Tags ───────────────────────────────────────────────────────
+  super + 1..9            switch to tag 1–9
+  super + shift + 1..9    send window to tag 1–9
+  super + Tab             toggle previous tag
+  super + grave           cycle to next used tag
+  super + shift + grave   cycle to previous used tag
+
+── 4. Layout & Tiling (frames) ────────────────────────────────────────────────
+  super + h / Left        focus frame left
+  super + j / Down        focus frame down
+  super + k / Up          focus frame up
+  super + l / Right       focus frame right
+  super + shift + h/j/k/l  move window left/down/up/right
+  super + shift + arrows   move window left/down/up/right
+  super + ctrl + h/j/k/l   resize frame
+  super + o               split frame to the right
+  super + a               split frame below
+  super + ctrl + space    explode frame into subframes
+  super + w               merge frame into its parent
+  super + m               cycle frame layout
+  super + p               cycle layouts (vertical / horizontal / max / grid)
+
+── 5. Multi-monitor ───────────────────────────────────────────────────────────
+  super + comma           focus previous monitor
+  super + period          focus next monitor
+  super + BackSpace       focus next monitor
+
+── 6. Multimedia & Hardware ───────────────────────────────────────────────────
+  XF86AudioRaiseVolume    raise volume (pamixer)
+  XF86AudioLowerVolume    lower volume (pamixer)
+  XF86AudioMute           toggle mute (pamixer)
+  XF86AudioPlay           play / pause (playerctl)
+  XF86AudioNext           next track (playerctl)
+  XF86AudioPrev           previous track (playerctl)
+  XF86AudioStop           stop (playerctl)
+  XF86MonBrightnessUp     increase screen brightness
+  XF86MonBrightnessDown   decrease screen brightness
+
+── 7. Screenshots ─────────────────────────────────────────────────────────────
+  super + u               region screenshot to clipboard (maim)
+  super + ctrl + u        fullscreen screenshot to clipboard (maim)
+  Print                   full screenshot to Pictures (maim)
+  ctrl + Print            xfce4-screenshooter (interactive)
+  ctrl + shift + Print    flameshot gui
+
+── 8. System & Session ────────────────────────────────────────────────────────
+  super + shift + r       reload herbstluftwm config
+  super + x               archlinux-logout
+  ctrl + alt + k          archlinux-logout
+  ctrl + alt + l          archlinux-logout --settings
+  ctrl + alt + r          archlinux-betterlockscreen (lock screen)
+  super + shift + x       edu-powermenu
+  super + ctrl + s        kiro-keybindings (show this cheatsheet)
+  super + b               toggle status bar (polybar)
+  super + g               toggle compositor (fastcompmgr)
+  ctrl + alt + shift + Delete  quit herbstluftwm
