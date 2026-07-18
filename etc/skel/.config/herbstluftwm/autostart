@@ -48,6 +48,7 @@ hc keybind $Mod-Shift-Return    spawn thunar                        # file manag
 hc keybind $Mod-space           spawn $ROFI                         # app launcher
 hc keybind $Mod-r               spawn $ROFI                         # app launcher
 hc keybind $Mod-d               spawn $ROFI                         # app launcher
+hc keybind $Mod-Shift-d         spawn $ROFI                         # app launcher
 hc keybind $Mod-e               spawn code                          # editor
 hc keybind $Mod-v               spawn pavucontrol                   # audio mixer
 hc keybind $Mod-F1              spawn vivaldi-stable                 # browser
@@ -111,6 +112,12 @@ hc keybind $Mod-Control-space   split explode                      # explode int
 hc keybind $Mod-w               remove                             # merge frame into parent
 hc keybind $Mod-m               cycle_layout +1                    # cycle frame layout
 hc keybind $Mod-p               cycle_layout +1 vertical horizontal max grid   # explicit layouts
+
+# ── Frame layout default ──────────────────────────────────────────────────────
+# New frames tile windows side by side (left to right) by default. Set BEFORE the
+# tags are created below so each tag's root frame adopts it on first login.
+# Layouts: vertical (stacked), horizontal (side by side), max, grid.
+hc set default_frame_layout horizontal
 
 # ── Tags (workspaces) ─────────────────────────────────────────────────────────
 # QWERTY is the shipped default; a Belgian (be) layout auto-loads the AZERTY

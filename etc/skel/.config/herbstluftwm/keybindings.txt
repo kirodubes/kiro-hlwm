@@ -16,6 +16,7 @@
   super + space           rofi drun (app launcher)
   super + r               rofi drun (app launcher)
   super + d               rofi drun (app launcher)
+  super + shift + d       rofi drun (app launcher)
   super + F11             rofi drun (app launcher)
   super + F12             rofi drun (app launcher)
   super + e               code (editor)

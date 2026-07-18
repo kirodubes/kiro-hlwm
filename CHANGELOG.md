@@ -25,6 +25,10 @@ Initial config package — the herbstluftwm (hlwm) edition of Kiro, minted throu
 - polybar status bar (self-contained in the config dir) with a clickable
   herbstclient-driven tags module.
 - rofi launcher theme, fastcompmgr compositor toggle, Kiro wallpaper default.
+- `super+shift+d` opens the same rofi launcher as `super+d` (both bound to rofi).
+- Default frame layout is **horizontal** (windows side by side), not the stock
+  vertical — set via `default_frame_layout horizontal` before the tags are created
+  so every tag's root frame adopts it on first login.
 
 ### Files Modified
 
