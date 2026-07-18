@@ -29,6 +29,9 @@ Initial config package — the herbstluftwm (hlwm) edition of Kiro, minted throu
 - Default frame layout is **horizontal** (windows side by side), not the stock
   vertical — set via `default_frame_layout horizontal` before the tags are created
   so every tag's root frame adopts it on first login.
+- polybar right modules now carry text labels (`VOL` / `RAM` / `CPU`) instead of
+  the intended nerd-font icons, which the editor stripped to blank — the bar read
+  as bare, unlabelled percentages.
 
 ### Files Modified
 
