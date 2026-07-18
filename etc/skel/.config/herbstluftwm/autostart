@@ -131,6 +131,13 @@ case ",$layout," in
   *)      tag_keys=( "${qwerty_keys[@]}" ) ;;
 esac
 hc rename default "${tag_names[0]}" 2>/dev/null || true
+# The initial "default" tag's root frame is created by herbstluftwm BEFORE this
+# script runs, so it keeps the compiled-in vertical layout regardless of the
+# default_frame_layout set above (which only applies to frames created afterwards,
+# i.e. tags 2-9). Force this first tag's frame to match. (On reload this also
+# re-levels the focused frame to horizontal, consistent with reload reapplying
+# the other defaults.)
+hc set_layout horizontal
 for i in "${!tag_names[@]}" ; do
   hc add "${tag_names[$i]}"
   key="${tag_keys[$i]}"

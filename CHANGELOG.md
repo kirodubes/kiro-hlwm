@@ -28,7 +28,10 @@ Initial config package — the herbstluftwm (hlwm) edition of Kiro, minted throu
 - `super+shift+d` opens the same rofi launcher as `super+d` (both bound to rofi).
 - Default frame layout is **horizontal** (windows side by side), not the stock
   vertical — set via `default_frame_layout horizontal` before the tags are created
-  so every tag's root frame adopts it on first login.
+  so tags 2-9 adopt it on first login. The initial "default" tag (tag 1) is created
+  by herbstluftwm *before* autostart runs and keeps the compiled vertical default,
+  so an explicit `hc set_layout horizontal` after the rename levels tag 1 too
+  (verified live on the Kiro VM: tag 1 was vertical while 2-9 were horizontal).
 - polybar right modules now carry text labels (`VOL` / `RAM` / `CPU`) instead of
   the intended nerd-font icons, which the editor stripped to blank — the bar read
   as bare, unlabelled percentages.
