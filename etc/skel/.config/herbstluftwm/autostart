@@ -160,7 +160,7 @@ hc keybind $Mod-x               spawn archlinux-logout              # logout dia
 hc keybind Control-Mod1-k       spawn archlinux-logout             # logout dialog
 hc keybind Control-Mod1-l       spawn archlinux-logout --settings  # logout settings
 hc keybind Control-Mod1-r       spawn archlinux-betterlockscreen   # lock screen
-hc keybind $Mod-Shift-x         spawn edu-powermenu                # power menu
+hc keybind $Mod-Shift-x         spawn kiro-powermenu                # power menu
 hc keybind $Mod-Control-s       spawn kiro-keybindings             # keybindings cheatsheet
 hc keybind $Mod-b               spawn polybar-msg cmd toggle       # toggle status bar
 hc keybind $Mod-g               spawn $HOME/.config/herbstluftwm/scripts/fastcompmgr-toggle.sh  # toggle compositor

@@ -102,7 +102,7 @@
   ctrl + alt + k          archlinux-logout
   ctrl + alt + l          archlinux-logout --settings
   ctrl + alt + r          archlinux-betterlockscreen (lock screen)
-  super + shift + x       edu-powermenu
+  super + shift + x       kiro-powermenu
   super + ctrl + s        kiro-keybindings (show this cheatsheet)
   super + b               toggle status bar (polybar)
   super + g               toggle compositor (fastcompmgr)
